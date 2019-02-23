@@ -27,7 +27,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
 const dateFormat = require('dateformat'); 
 const pretty = require('pretty-ms') 
-const prefix = 'G.';
+const prefix = '$';
 var table = require('table').table
 var ti={}  
 ,spee={}
@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = [`${client.guilds.size} Server`,'-help','Type -help',`${client.users.size} Members`,'#DS..','By: #DS.. Server'];
+    var setGame = [`${client.guilds.size} Server`,'$help','Type $help',`${client.users.size} Members`,'Huwaii','By: Huwaii,. Server'];
     var i = -1;
     var j = 0;
     setInterval(function (){
